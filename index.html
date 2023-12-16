@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dist/output.css">
+  <title>Site</title>
+</head>
+
+<body>
+  <!-- container start -->
+  <div class="px-2 max-w-screen-xl mx-auto">
+    <!-- header -->
+    <header class="mb-2 mt-2 px-5 rounded-t flex items-center gap-8 justify-between bg-rose-200 rounded-b">
+        <a class="font-bold uppercase text-lg md:text-xl text-sky-600 py-4 mx- flex items-center gap-2 hover:text-indigo-800 transition duration-300" href="">Pear
+          <img class="w-" src="assets/images/icons.png" alt=""></a>
+        <nav class="hidden md:block">
+          <ul class="font-medium text-xl text-slate-800 flex items-center gap-6 mx-  py-3">
+            <li><a class="navbar-link" href="">Home</a></li>
+            <li><a class="navbar-link" href="">Contacts</a></li>
+            <li><a class="navbar-link" href="">About</a></li>
+            <li><a class="navbar-link" href="">News</a></li>
+            <li><a class="navbar-link" href="">Our team</a></li>
+          </ul>
+        </nav>
+        <button class="md:hidden px-10 w-24">
+          <img src="assets/images/menu100.png" alt="">
+        </button>
+    </header>
+
+    <!-- main -->
+    <main>
+
+      <!-- hero -->
+        <div class="px-2 flex gap-2 flex-col md:flex-row">
+          <article class="h-64 md:h-96 md:w-2/3 relative mb-5 md:mb-5 overflow-hidden rounded-md">
+            <a class="hero-link" href="">
+              <h2 class="hero-title">Platoon
+                missions, and collect lucrative rewards including...</h2>
+              <img class="hero-img" src="assets/images/stepi_light.jpg" alt="image">
+              <div
+                class="absolute left-0 top-0 w-full h-full bg-gradient-to-tr from-red-400 via-transparent to-sky-600">
+              </div>
+            </a>
+          </article>
+          <article class="h-64 md:h-96 md:w-2/3 lg:w-1/3 relative mb-10 lg:mb-10 overflow-hidden rounded-md">
+            <a class="hero-link" href="">
+              <h2 class="hero-title">Swiss luxury
+                watches for men...</h2>
+              <img class="hero-img" src="assets/images/zenith.jpg" alt="image">
+              <div
+                class="absolute left-0 top-0 w-full h-full bg-gradient-to-tr from-green-400 via-transparent to-red-400">
+              </div>
+            </a>
+          </article>
+        </div>
+
+      <!-- wrapper -->
+      <div class="px-2 flex gap-10 flex-col md:flex-row mb-10">
+
+        <!-- articles -->
+        <div class="flex-grow basis-0">
+          <article>
+            <h1 class="text-2xl md:text-3xl font-bold text-gray-600 mb-10">Lorem ipsum dolor sit amet consectetur.</h1>
+            <article class="mb-8">
+              <a class="flex gap-4 flex-col md:flex-row" href="">
+                <div>
+                  <h2 class="text-xl md:text-2xl font-semibold text-gray-800 -mt-2">Zenith (watchmaker)</h2>
+                  <p class="text-gray-700">Zenith SA is a Swiss luxury watchmaker. The company was started in 1865 by
+                    Georges Favre-Jacot in Le
+                    Locle in the canton
+                    of Neuchâtel and is one of the oldest continuously operating watchmakers.</p>
+                </div>
+                <img class="article-img" src="assets/images/ZENITH_2.jpg" alt="image">
+              </a>
+            </article>
+            <article class="mb-8">
+              <a class="flex gap-4 flex-col md:flex-row" href="">
+                <div>
+                  <h2 class="text-xl md:text-2xl font-semibold text-gray-800 -mt-2">Stelmuzhsky oak</h2>
+                  <p>Encyclopedic sources give different estimates of his age: almost 2000 years, about 1000 years. An
+                    accurate
+                    determination of age is extremely difficult because the core of the trunk has rotted and was
+                    removed, about 1500
+                    years</p>
+                </div>
+                <img class="article-img" src="assets/images/tree.jfif" alt="image">
+              </a>
+            </article>
+            <article class="mb-3">
+              <a class="flex gap-4 flex-col md:flex-row" href="">
+                <div>
+                  <h2 class="text-xl md:text-2xl font-semibold text-gray-800 -mt-2">Etymology of the word pear</h2>
+                  <p>The pear came to us from the prehistoric era. Her homeland has not been precisely established. The
+                    cultivated pear
+                    appears to originate fromAncient Greece.</p>
+                </div>
+                <img class="article-img" src="assets/images/grusha_na_vetke.jpg" alt="image">
+              </a>
+            </article>
+          </article>
+        </div>
+
+        <!-- form -->
+        <div class="md:w-1/3">
+          <h4 class="font-bold text-lg uppercase text-gray-800 mb-2">Sabscribe</h4>
+          <form class="w-full shadow-md rounded p-5">
+            <div>
+              <label class="block text-gray-800 mb-2" for="email">Sabscribe to our news</label>
+              <input
+                class="shadow-md border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-red-200"
+                id="email" type="text" placeholder="Email address...">
+            </div>
+            <div class="mt-4">
+              <button
+                class="block py-2 px-6 bg-blue-600 rounded uppercase text-white font-medium text-sm hover:bg-blue-800 hover:shadow-lg focus:outline-none transition duration-300"
+                type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- pagination -->
+      <div>
+        <ul class="flex justify-center mt-3">
+          <li><a class="paginator-link__active-l" href="">First</a></li>
+          <li><a class="pagination-link" href="">Prev</a></li>
+          <li><a class="pagination-link" href="">1</a></li>
+          <li><a class="pagination-link" href="">2</a></li>
+          <li><a class="pagination-link" href="">3</a></li>
+          <li><a class="pagination-link" href="">4</a></li>
+          <li><a class="pagination-link" href="">5</a></li>
+          <li><a class="pagination-link" href="">Next</a></li>
+          <li><a class="paginator-link__active-r" href="">Last</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="px-2 border-t-4 border-b-4 mt-9 mb-10 bg-gray-50">
+      <div>
+        <div>
+          <ul class="flex gap-9 justify-center py-5">
+            <li><a href=""><img class="footer-link__social" src="assets/images/facebook.png" title="our Facebook"
+                  alt="image"></a></li>
+            <li><a href=""><img class="footer-link__social" src="assets/images/instagram.png" title="our instagram"
+                  alt="image"></a></li>
+            <li><a href=""><img class="footer-link__social" src="assets/images/telegram.png" title="our telegram"
+                  alt="image"></a></li>
+            <li><a href=""><img class="footer-link__social" src="assets/images/twitter.png" title="our twitter"
+                  alt="image"></a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex gap-8 justify-center mt-2 font-bold">
+            <li><a class="footer-link" href="">FAQs</a></li>
+            <li><a class="footer-link" href="">Privacy</a></li>
+            <li><a class="footer-link" href="">Terms</a></li>
+            <li><a class="footer-link" href="">Get Point</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="text-center py-7 font-bold">Manuylov_Alex&copy; 2023</h5>
+        </div>
+      </div>
+    </footer>
+
+    <!-- container end -->
+  </div>
+</body>
+
+</html>
